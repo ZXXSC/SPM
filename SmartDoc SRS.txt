@@ -1,0 +1,28 @@
+@Requirement [id=rq1][description=Return a list where each element is a word from fname.]
+ Rationale  [id=ra11] [description=Delete the space in fname and save in line. Divide the line into many strings and save in lst. 				Find the word x which user input in lst and save in L. Finally return the L.]
+ TestCase   [id=tc1] [description=Type the "h" into textbox, and it will return a list of word which contains the word "h".]
+ Priority   [Low/Medium/High]
+
+
+
+@Requirement [id=rq2][description=Return a dictionary given list lst.  Each key is an element in the lst. The value is always 1.]
+ Rationale  [id=ra12] [description=Give the each element in lst a key which is always 1 and return the dictionary.]
+ TestCase   [id=tc2] [description=Type the "h" into textbox, and use rq1 to get a list in which every word contains "h". Then rq2 				will give every word in the list a key.]
+ Priority   [Low/Medium/High]
+
+
+
+@Requirement [id=rq3] [description=Return a dictionary where each key is a word both in the file fname and in 
+    				the dictionary english_dictionary, and the corresponding value is the frequency
+    				of that word.]
+ Rationale  [id=ra13] [description=Use rq1 to get the list of fname. Change the word into lowercase. If the word user input is 						in english_dictionary and not in d, the key will be 1. If the word user input is in 							english_dictionary and in d, the key will plus 1. Then return d.]
+ TestCase   [id=tc3] [description=Type the "h" into textbox, and use rq1 to get a list in which every word contains "h", and use 					rq2 to get the dictionary, and use rq3 to get the frequency of the world.]
+ Priority   [Low/Medium/High]
+
+
+
+@Requirement [id=rq4] [description=Return a sorted list of tuples, each tuple containing a key and a value.
+        			Note that the tuples are order in descending order of the value.]
+ Rationale  [id=ra14] [description=Import operator. Iterate the items in d compared with the first region's value with the 						descending oder. Then return lst. If the .py file is runned in cmd directly, use rq1 and rq2 to get 				a dictionary in the "words.txt", and use rq3 to find the frequency of the ed, then print the value 					of frequency.]
+ TestCase   [id=tc4] [description=Type the "h" into textbox, and use rq1 to get a list in which every word contains "h", and use 					rq2 to get the dictionary, and use rq3 to get the frequency of the world and print it.]
+ Priority   [Low/Medium/High]
