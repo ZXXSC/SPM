@@ -1,5 +1,5 @@
 @Requirement [id=rq1][description=Return a list where each element is a word from fname.]
- Rationale  [id=ra11] [description=Delete the space in fname and save in line. Divide the line into many strings and save in lst.	Find the word x which user input in lst and save in L. Finally return the L.]
+ Rationale  [id=ra11] [description=Delete the space in fname and save in line. Divide the line into many strings and save in lst. Find the word x which user input in lst and save in L. Finally return the L.]
  TestCase   [id=tc1] [description=Type the "h" into textbox, and it will return a list of word which contains the word "h".]
  Priority   [Low]
 
@@ -20,6 +20,6 @@
 
 
 @Requirement [id=rq4] [description=Return a sorted list of tuples, each tuple containing a key and a value. Note that the tuples are order in descending order of the value.]
- Rationale [id=ra14] [description=Import operator. Iterate the items in d compared with the first region's value with the descending oder. Then return lst. If the .py file is runned in cmd directly, use rq1 and rq2 to get	a dictionary in the "words.txt", and use rq3 to find the frequency of the ed, then print the value of frequency.]
- TestCase [id=tc4] [description=Type the "h" into textbox, and use rq1 to get a list in which every word contains "h", and use rq2 to get the dictionary, and use rq3 to get the frequency of the world and print it.]
+ Rationale  [id=ra14] [description=Import operator. Iterate the items in d compared with the first region's value with the descending oder. Then return lst. If the .py file is runned in cmd directly, use rq1 and rq2 to get	a dictionary in the "words.txt", and use rq3 to find the frequency of the ed, then print the value of frequency.]
+ TestCase  [id=tc4] [description=Type the "h" into textbox, and use rq1 to get a list in which every word contains "h", and use rq2 to get the dictionary, and use rq3 to get the frequency of the world and print it.]
  Priority [High]
