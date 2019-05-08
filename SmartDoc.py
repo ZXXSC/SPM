@@ -10,6 +10,7 @@ for line in lines(sys.stdin):
     line = re.sub(r'\*(.+?)\*',r'<em>\1</em>',line)
     if line.startswith('@Requirement [id=rq1]'):
         print('<pre><a href="Word_Frequency.html#def1" name="rq1" target="_blank">'+line+'</a></pre>')
+        print('<a href="Word_Frequency.html#def11" name="rq1" target="_blank">[id=rq11]</a>')
     elif line.startswith('@Requirement [id=rq2]'):
         print('<pre><a href="Word_Frequency.html#def2" name="rq2" target="_blank">'+line+'</a></pre>')
     elif line.startswith('@Requirement [id=rq3]'):
@@ -18,6 +19,8 @@ for line in lines(sys.stdin):
         print('<pre><a href="Word_Frequency.html#def4" name="rq4" target="_blank">'+line+'</a></pre>')
     elif line.startswith('#{see rq1}'):
         print('<pre><a href="SmartDocSRS.html#rq1" name="def1" target="_blank">'+line+'</a></pre>')
+    elif line.startswith('    #{see rq1}'):
+        print('<pre><a href="SmartDocSRS.html#rq1" name="def11" target="_blank">'+line+'</a></pre>')
     elif line.startswith('#{see rq2}'):
         print('<pre><a href="SmartDocSRS.html#rq2" name="def2" target="_blank">'+line+'</a></pre>')
     elif line.startswith('#{see rq3}'):
