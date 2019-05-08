@@ -33,6 +33,7 @@ def word_frequency(fname, english_dictionary):
         x = x.lower()
         if x in english_dictionary:
             if not x in d:
+                #{see rq1}
                 d[x] = 1
             else:
                 d[x] += 1
